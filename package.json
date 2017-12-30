@@ -1,0 +1,16 @@
+{
+  "name": "equivalencias",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.15.5",
+    "mongoose": "^4.13.7",
+    "nodemon": "^1.14.3",
+    "pug": "2.0.0-beta11"
+  }
+}
