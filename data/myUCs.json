@@ -1,0 +1,362 @@
+[
+    {
+        "_id": "AL",
+        "uc":"Álgebra Linear EI",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "C",
+        "uc":"Cálculo",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "TMD",
+        "uc":"Tópicos de Matemática Discreta",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "PF",
+        "uc":"Programação Funcional",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "EES",
+        "uc":"Elementos de Engenharia de Sistemas",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "LII",
+        "uc":"Laboratórios de Informática I",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "SC",
+        "uc":"Sistemas de Computação",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "A",
+        "uc":"Análise",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "TFM",
+        "uc":"Tópicos de Física Moderna",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "L",
+        "uc":"Lógica EI",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "PI",
+        "uc":"Programação Imperativa",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "LIII",
+        "uc":"Laboratórios de Informática II",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 1
+    },
+    {
+        "_id": "ISD",
+        "uc":"Introdução aos Sistemas Dinâmicos",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "TP:60",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "EA",
+        "uc":"Estatística Aplicada",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "EE",
+        "uc":"Engenharia Económica",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "AC",
+        "uc":"Arquitetura de Computadores",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "CD",
+        "uc":"Comunicação de Dados",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "AlgC",
+        "uc":"Algoritmos e Complexidade",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "SO",
+        "uc":"Sistemas Operativos",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "POO",
+        "uc":"Programação Orientada aos Objetos",
+        "area": "CB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "E",
+        "uc":"Eletromagnetismo EE",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "Op",
+        "uc":"Opção UMinho",
+        "area": "QAC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "Variável",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "CP",
+        "uc":"Cálculo de Programas",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "LIIII",
+        "uc":"Laboratórios de Informática III",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 2
+    },
+    {
+        "_id": "BD",
+        "uc":"Bases de Dados",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "DSS",
+        "uc":"Desenvolvimento de Sistemas de Software",
+        "area": "CTE-EI",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "MDIO",
+        "uc":"Modelos Determinísticos de Investigação Operacional",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "SD",
+        "uc":"Sistemas Distribuídos",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "RC",
+        "uc":"Redes de Computadores",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "MNONL",
+        "uc":"Métodos Numéricos e Otimização não Linear",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "SRCR",
+        "uc":"Sistemas de Representação de Conhecimento e Raciocínio",
+        "area": "CTE-EI",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "MEIO",
+        "uc":"Modelos Estocásticos de Investigação Operacional",
+        "area": "CC",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "CG",
+        "uc":"Computação Gráfica",
+        "area": "CTE-EI",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "CC",
+        "uc":"Comunicações por Computador",
+        "area": "CTE-EI",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;PL:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "PL",
+        "uc":"Processamento de Linguagens",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "T:30;TP:30",
+        "ects": 5,
+        "ano": 3
+    },
+    {
+        "_id": "LIIV",
+        "uc":"Laboratórios de Informática IV",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 3
+    }
+]
