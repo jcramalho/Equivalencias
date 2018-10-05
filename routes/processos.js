@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Processo = require('../models/processo')
 var mongoose = require('mongoose')
+var fs = require('fs')
 
 // GET Lista os Processos
 router.get('/', function(req, res, next) {
@@ -19,13 +20,18 @@ router.get('/processo/:pid', (req, res, next)=>{
     Processo
       .findById(req.params.pid)
       .exec((err, doc)=>{
-          if(!err) res.render('processo2', {proc:doc})
+          if(!err){             
+            var data = fs.readFileSync(__dirname + '/../data/myUCs.json', 'utf8')
+            var ucs = JSON.parse(data)
+            res.render('processo2', {proc:doc, lucs:ucs})
+          } 
           else res.render('error', {error:err})
       })
 })
 
 // GET Envia os dados em JSON de um processo
 router.get('/processo/:pid/data', (req, res, next)=>{
+    console.log("Parecer do: " + req.params.pid)
     Processo
       .findById(req.params.pid)
       .exec((err, doc)=>{
@@ -53,8 +59,11 @@ router.post('/processo/:idProc/equivalencia', (req, res, next)=>{
                 ects: req.body.ects,
                 nota: req.body.nota,
                 percent: req.body.percent,
-                ucEquiv: req.body.ucEquiv
+                ucEquiv: req.body.ucEquiv,
+                anoUcEquiv: req.body.anoUcEquiv,
+                semUcEquiv: req.body.semUcEquiv
             }
+    console.log(JSON.stringify(nova))
     Processo
       .update({_id: req.params.idProc}, 
               {$push: {equivalencias: nova}},

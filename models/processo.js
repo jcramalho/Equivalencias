@@ -7,7 +7,9 @@ var EquivalenciaSchema = new Schema(
         ects: {type: Number, required: true},
         nota: {type: Number, required: true},
         percent: {type: Number, required: true},
-        ucEquiv: {type: String, required: true}
+        ucEquiv: {type: String, required: true},
+        anoUcEquiv: {type: String, required: true},
+        semUcEquiv: {type: String, required: true}
     }
 )
 

@@ -358,5 +358,65 @@
         "horasContacto": "PL:30",
         "ects": 5,
         "ano": 3
+    },
+    {
+        "_id": "OpI1",
+        "uc":"Opção I1",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
+    },
+    {
+        "_id": "OpI2",
+        "uc":"Opção I2",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
+    },
+    {
+        "_id": "OpA1",
+        "uc":"Opção A1",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
+    },
+    {
+        "_id": "OpA2",
+        "uc":"Opção A2",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
+    },
+    {
+        "_id": "OpA3",
+        "uc":"Opção A3",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
+    },
+    {
+        "_id": "OpA4",
+        "uc":"Opção A4",
+        "area": "IB",
+        "tipo": "Semestral",
+        "horasTotal": 140,
+        "horasContacto": "PL:30",
+        "ects": 5,
+        "ano": 4
     }
 ]

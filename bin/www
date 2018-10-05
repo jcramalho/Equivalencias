@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '7777');
+var port = normalizePort(process.env.PORT || '3018');
 app.set('port', port);
 
 /**
@@ -26,7 +26,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port);
-console.log('Servidor à escuta na porta 7777...')
+console.log('Servidor à escuta na porta 3018...')
 server.on('error', onError);
 server.on('listening', onListening);
 
