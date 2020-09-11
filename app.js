@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var logger = require('morgan');
 
 //var index = require('./routes/index');
 var processos = require('./routes/processos');
@@ -19,6 +20,7 @@ app.set('view engine', 'pug');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'));
 
 app.use('/', processos);
 app.use('/processos', processos);
