@@ -7,9 +7,7 @@ function emitirParecer(idProc){
         var cont = 1
         for(var i=0; i < data.equivalencias.length; i++){
             if(data.equivalencias[i].percent){
-                parecer += cont + ") " + data.equivalencias[i].ucEquiv + "(" 
-                parecer += data.equivalencias[i].anoUcEquiv + "º ano, "
-                parecer += data.equivalencias[i].semUcEquiv + "º sem.), com " 
+                parecer += cont + ") " + data.equivalencias[i].ucEquiv +  ", com " 
                 parecer +=  data.equivalencias[i].nota + " valores, por equivalência a "
                 parecer += data.equivalencias[i].ucRealizada + ";\n"
                 cont++
@@ -18,5 +16,28 @@ function emitirParecer(idProc){
         var html = "<div class='w3-code'><pre>" + parecer + "</pre></div>"
         $("#parecerEmitido").append(html)
     })
+}
+
+function removeEquivalencia(idProc, idEquiv){
+    $.ajax({
+        url: "http://localhost:3018/processos/processo/"+idProc+"/equivalencia/"+idEquiv,
+        method: 'DELETE',
+        contentType: 'application/json',
+        success: function(result) {
+            // true: força a carregar do servidor em lugar de ir à cache
+            location.reload(true);
+        },
+        error: function(request,msg,error) {
+            console.log("Erro: " + error);
+        }
+    });
+}
+
+function emitirParecer2(idProc){
+    axios.get()
+}
+
+function apagaProcesso(idProc){
+
 }
     

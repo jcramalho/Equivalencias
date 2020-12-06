@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
     .find()
     .sort({data: -1})
     .exec((err, doc)=>{
-      if(!err) res.render('processos', {lproc: doc})
+      if(!err) {
+        res.render('processos', {lproc: doc})
+      }
       else res.render('error', {error: err})
     })
 })
@@ -42,10 +44,11 @@ router.get('/processo/:pid/data', (req, res, next)=>{
 
 // POST Adiciona um Processo
 router.post('/processo', (req, res, next)=>{
+  var data = new Date()
   var novo = new Processo({_id: req.body.processo.replace(/\//g, "_"), processo: req.body.processo, 
                             idAluno: req.body.idAluno, nomeAluno: req.body.nomeAluno,
                             instProv: req.body.instProv, cursoProv: req.body.cursoProv,
-                            equivalencias: [], data: new Date().toISOString().slice(0,10)})
+                            equivalencias: [], data: data.toISOString()})
   novo.save((err, result)=>{
       if(!err) console.log('Acrescentei o processo: ' + req.body.processo)
       else console.log('Erro: ' + err)
@@ -65,13 +68,42 @@ router.post('/processo/:idProc/equivalencia', (req, res, next)=>{
             }
     console.log(JSON.stringify(nova))
     Processo
-      .update({_id: req.params.idProc}, 
+      .updateOne({_id: req.params.idProc}, 
               {$push: {equivalencias: nova}},
               (err, result)=>{
                   if(!err) console.log('Acrescentei a equivalência: '+req.body.ucRealizada)
                   else console.log('Erro: ' + err)
               })
     res.redirect('/processos/processo/'+req.params.idProc)
+})
+
+// DELETE Remove uma equivalencia dum processo
+router.delete('/processo/:idProc/equivalencia/:idEquiv', (req, res) => {
+  Processo
+      .findById(req.params.idProc)
+      .exec( (err, doc) => {
+          if(!err) {
+            var index = doc.equivalencias.findIndex(eq => eq._id == req.params.idEquiv);
+            doc.equivalencias.splice(index, 1);
+            doc.save(function (err) {
+              if (err) console.log("Erro ao remover: " + err);
+              else console.log('Equivalência removida: ' + req.params.idEquiv);
+            });
+            res.json(doc);
+          }
+          else res.json({error:err})
+      })
+})
+
+
+// DELETE Remove um processo da BD
+router.delete('/processo/:idProc', (req, res)=>{
+  Processo
+      .deleteOne({ _id: req.params.idProc }, function (erro) {
+        if (erro) console.log('Erro: ' + erro)
+        else console.log('Apaguei o processo: ' + req.params.idProc)
+  })
+  res.redirect('/processos')
 })
 
 module.exports = router;
