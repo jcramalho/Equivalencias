@@ -1,4 +1,4 @@
-extends layout
+extends layout-lista
 
 block content
   div(class="w3-container")
@@ -22,23 +22,25 @@ block content
     header(class="w3-container w3-center w3-teal")
       h2 Lista de Processos de Equivalência
   div(class="w3-container")
-    table(class="w3-table-all")
-      tr
-        th Data
-        th Processo
-        th #Aluno
-        th Nome
-        th Instituição
-        th Curso
-      each p in lproc
+    table.w3-table-all.display(id="listaProcessos")
+      thead
         tr
-          td= p.data
-          td
-            a(href="/processos/processo/" + p._id)= p.processo
-          td= p.idAluno
-          td= p.nomeAluno
-          td= p.instProv
-          td= p.cursoProv
+          th Data
+          th Processo
+          th #Aluno
+          th Nome
+          th Instituição
+          th Curso
+      tbody
+        each p in lproc
+          tr
+            td= p.data
+            td
+              a(href="/processos/processo/" + p._id)= p.processo
+            td= p.idAluno
+            td= p.nomeAluno
+            td= p.instProv
+            td= p.cursoProv
   div(class="w3-container")
     footer(class="w3-container w3-teal")
       address Gerado por GEquiv :: jcr :: 2017-Dezembro
