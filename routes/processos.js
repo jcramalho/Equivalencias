@@ -1,8 +1,19 @@
 var express = require('express');
 var router = express.Router();
 var Processo = require('../models/processo')
-var mongoose = require('mongoose')
 var fs = require('fs')
+
+// GET Devolve o total de processos
+router.get('/total', function(req, res, next) {
+  Processo
+    .countDocuments({})
+    .exec((err, doc)=>{
+      if(!err) {
+        res.jsonp(doc)
+      }
+      else res.jsonp(err)
+    })
+})
 
 // GET Lista os Processos
 router.get('/', function(req, res, next) {
