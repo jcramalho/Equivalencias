@@ -33,6 +33,7 @@ block content
           th Nome
           th Instituição
           th Curso
+          th #Equiv
       tbody
         each p in lproc
           tr
@@ -43,6 +44,7 @@ block content
             td= p.nomeAluno
             td= p.instProv
             td= p.cursoProv
+            td #{p.equivalencias.length}
   div(class="w3-container")
     footer(class="w3-container w3-teal")
       address Gerado por GEquiv :: jcr :: 2017-Dezembro
